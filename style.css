@@ -79,7 +79,7 @@ body {
     padding: 2.5em; 
 }
 .grid-why { grid-area: 3 / 3 / 4 / 4;
-    background-color: rgb(62, 221, 221);
+    background-color: #4abebd;
     padding: 2.5em; 
 }
 /*---------------Grid-----------------*/
