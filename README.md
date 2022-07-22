@@ -14,7 +14,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://onfiire.github.io/SingleGrid/](https://onfiire.github.io/SingleGrid/)
 
 ### Built with
 
