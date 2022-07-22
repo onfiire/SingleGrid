@@ -1,0 +1,181 @@
+/*--------------Font------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/*--------------Font------------------*/
+
+/*--------------Reset-----------------*/
+:root {
+    --cyan-: hsl(179, 62%, 43%);
+    --brightyellow-: hsl(71, 73%, 54%);
+    --lightgray-: hsl(204, 43%, 93%);
+    --grayishblue-: hsl(218, 22%, 67%);
+
+    --ff-primary-: 'Karla', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+    list-style: none;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+@media (prefers-reduced-motion: reduce) {
+   html:focus-within {
+    scroll-behavior: auto;
+   }
+   *,
+   *::before,
+   *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+   }
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: var(--ff-primary-);
+    background-color: hsl(204, 43%, 93%);
+}
+/*--------------Reset-----------------*/
+
+/*---------------Body-----------------*/
+/*---------------Body-----------------*/
+
+/*---------------Grid-----------------*/
+.container {  display: grid;
+    grid-template-columns: 1fr repeat(2, 320px) 1fr;
+    grid-template-rows: 1fr 220px 260px 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 100vh;
+    width: 100%;
+}
+  .grid-container { grid-area: 2 / 2 / 4 / 4; }
+.grid-description { grid-area: 2 / 2 / 3 / 4;
+    background-color: white;
+    padding: 40px; 
+}
+.grid-price { grid-area: 3 / 2 / 4 / 3;
+    background-color: var(--cyan-);
+    padding: 40px; 
+}
+.grid-why { grid-area: 3 / 3 / 4 / 4;
+    background-color: rgb(62, 221, 221);
+    padding: 40px; 
+}
+/*---------------Grid-----------------*/
+
+/*---------------img------------------*/
+/*---------------img------------------*/
+  
+/*---------------Text-----------------*/
+h1 {
+    font-size: 2.2rem;
+    color: var(--cyan-);
+    font-weight: 700;
+    padding-bottom: .7em;
+}
+h2 {
+    color: var(--brightyellow-);
+    font-size: 1.75rem;
+    padding-bottom: 1em;
+}
+.description {
+    color: var(--grayishblue-);
+    padding-bottom: .5em;
+    width: 95%;
+    font-size: 1.5rem;
+}
+h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding-bottom: 0.9em;
+}
+h4 {
+    color: var(--lightgray-);
+    padding-bottom: 1em;
+}
+h4 span {
+     color: white;
+     font-size: 2.9rem;
+     font-weight: 700;
+     padding-right: 0.3em;
+}
+.full {
+    color: white;
+    font-size: 1.4rem;
+    padding-bottom: 2em;
+    margin-top: -0.7em;
+}
+button {
+    background-color: var(--brightyellow-);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.7em;
+}
+.description3 {
+    color: var(--lightgray-);
+    font-size: 1.4rem;
+    width: 21.81ch;
+}
+/*---------------Text-----------------*/
+
+/*---------------Link-----------------*/
+/*---------------Link-----------------*/
+
+/*--------------Button----------------*/
+/*--------------Button----------------*/
+
+@media screen and (max-width: 768px) {
+    .container {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 270px 
+        233px 251px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        height: 100%;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+      .grid-container { grid-area: 1 / 1 / 4 / 2;
+    }
+      .grid-description { grid-area: 1 / 1 / 2 / 2;
+        width: 315px;
+        padding: 1.5em; 
+    }
+      .grid-price { grid-area: 2 / 1 / 3 / 2;
+        width: 315px;
+        padding: 1.5em;  
+    }
+      .grid-why { grid-area: 3 / 1 / 4 / 2;
+        width: 315px;
+        padding: 2em;
+    }
+}
+      
+    
