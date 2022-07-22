@@ -127,14 +127,6 @@ h4 span {
     padding-bottom: 2em;
     margin-top: -0.7em;
 }
-button {
-    background-color: var(--brightyellow-);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    padding: 0.7em;
-}
 .description3 {
     color: var(--lightgray-);
     font-size: 1.4rem;
@@ -146,6 +138,14 @@ button {
 /*---------------Link-----------------*/
 
 /*--------------Button----------------*/
+button {
+    background-color: var(--brightyellow-);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.7em;
+}
 /*--------------Button----------------*/
 
 @media screen and (max-width: 768px) {
